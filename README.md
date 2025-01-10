@@ -6,7 +6,7 @@ Compared with the training set, the experimental set with unpublished specific c
 I generated 2000 texts using the interface of the Great Prophecy Model, and then screened the length and similarity to select the articles that can be used.
 
 At first, I tried the pure traditional machine learning method, that is, using GPC Gaussian classification model to predict the data alone. Although the training prediction speed is very fast, the prediction accuracy is very poor.) bpe byte pairs are encoded to generate token tfidf statistical text features, and the dimensions are reduced by truncating SVD and then input into GPC model for training.
-![Stacking](https://github.com/user-attachments/assets/a27613da-49e8-4130-b171-75853bfa6dd7)
+![GPC](https://github.com/user-attachments/assets/2beb10c4-859a-4e59-9be8-b2b9b39c0462)
 
 Training model: set the difference between the category probability predicted by EarlyStoppingCallback and eval_loss model and the real label, and save the checkpoint.
 
